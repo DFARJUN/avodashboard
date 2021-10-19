@@ -4,17 +4,6 @@ var miny
 var quary;
 window.onload = function dor() {
 
-        
-    
-    function myLoop(x) { 
-    var divdate = document.createElement("div");
-    var datenum = x.user_name;
-    var divdatetext = document.createTextNode(datenum);
-    divdate.appendChild(divdatetext);
-        var element = document.getElementById("demo");
-        divdate.id = "divdate";
-    element.appendChild(divdate);
-
     function readTextFile(file, callback) {
         var rawFile = new XMLHttpRequest();
         rawFile.overrideMimeType("application/json");
@@ -33,10 +22,16 @@ window.onload = function dor() {
         console.log(data);
         quary = data;
     });
-
     myLoop(quary)
-
-
+    
+    function myLoop(x) { 
+    var divdate = document.createElement("div");
+    var datenum = x.user_name;
+    var divdatetext = document.createTextNode(datenum);
+    divdate.appendChild(divdatetext);
+        var element = document.getElementById("demo");
+        divdate.id = "divdate";
+    element.appendChild(divdate);
 
         var i, y, xLen;
         x = x.childNodes;
