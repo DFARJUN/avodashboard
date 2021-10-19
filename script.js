@@ -48,7 +48,6 @@ window.onload = function dor() {
             
             var tag = document.createElement("h2");
             var fullname = quary[i].user_name;
-            console.log(quary[i].user_name);
             var text = document.createTextNode(fullname);
             tag.classList.add("sh2")
 
