@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+    </style>
+    <script type="text/javascript" src="quary.js"></script>
+    <script src="jquery-1.12.2.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- HTML5 Input Form Elements -->
+  <input id="fileupload" type="file" name="fileupload" /> 
+  <button id="upload-button" onclick="uploadFile()"> Upload </button>
+
+  <!-- Ajax JavaScript File Upload Logic -->
+  <script>
+  async function uploadFile() {
+  let formData = new FormData(); 
+  formData.append("file", fileupload.files[0]);
+  await fetch('/upload.php', {
+    method: "POST", 
+    body: formData
+  }); 
+  alert('The file has been uploaded successfully.');
+  }
+  </script>
+  
+</body>
+</html>
