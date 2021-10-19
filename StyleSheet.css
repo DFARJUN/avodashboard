@@ -1,0 +1,97 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600&display=swap');
+body *{
+    font-family:Assistant;
+   /*overflow:hidden;*/
+}
+html{
+   /* overflow:hidden;*/
+}
+body {
+    background-color:lightgray;
+    background: radial-gradient(50.92% 90.52% at 49.08% 49.92%, #2C014B 0%, #56026F 14.58%, #3F015B 41.15%, #230039 77.52%, #1B002F 100%);
+    margin:0.8vw;
+}
+
+#demo > div {
+    display: inline-block;
+    width: 18.2vw;
+    overflow: hidden;
+    margin: 0.7vw;
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5vw;
+    border-radius: 0.5VW;
+    background-size: 100%;
+}
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.95vw;
+        height: 3.78vw;
+        overflow-y: hidden;
+        margin: -1vw 0;
+    }
+h3 {
+    margin: 0vw 0 0.2vw;
+    font-size: 2vw;
+}
+div{
+    font-size:0.5vw;
+}
+img{
+    height:5vw
+}
+
+span {
+    display: inline-block;
+    height: 1.3vw;
+    float: left;
+    background: gray;
+}
+
+#demo > div > div {
+    border-radius: 32vw;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 0.001vw solid gray;
+}
+
+div#divdate {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 0.8vw;
+    border: none;
+    border-radius: 0;
+    width: unset;
+}
+
+.bigthan30{
+    background-image: url(Group\ 1261.svg);
+    color: #205640;
+}
+
+.lessthan30{
+    background-image: url(Group\ 1262.svg);
+    color: #FF555A;
+}
+
+.thefirst{
+    /*background-image: url(Group\ 1263.svg);
+    color: #D48C00;*/
+}
+
+h2.fh2 {
+    margin: 3.0vw;
+    font-size: 2.5vw;
+}
+
+
+
+
+
+
