@@ -30,6 +30,8 @@ window.onload = function dor() {
 
         var i, y, xLen;
         for (i = 0; i < 21; i++) {
+            console.log(quary)
+            console.log(quary[1])
             var div = document.createElement("div");
            
             var tag0 = document.createElement("h2");
