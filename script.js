@@ -25,11 +25,12 @@ window.onload = function dor() {
         }
         rawFile.send(null);
     }
-    
+    var quary;
     //usage:
     readTextFile("quary.json", function(text){
         var data = JSON.parse(text);
         console.log(data);
+        quary = data;
     });
 
 

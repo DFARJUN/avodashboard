@@ -1,4 +1,4 @@
-var quary = [
+var quary33 = [
 {"user_name":"Nuriel Chyts","avg_picking_per_hour":51.0666666666666666},
 {"user_name":"Brenda Porjolovsky","avg_picking_per_hour":49.4666666666666666},
 {"user_name":"Leah Aviezri","avg_picking_per_hour":49.4545454545454546},
