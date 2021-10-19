@@ -3,7 +3,7 @@ var maxy
 var miny
 window.onload = function dor() {
 
-        myLoop(quary)
+        
     
     function myLoop(x) { 
     var divdate = document.createElement("div");
@@ -31,6 +31,7 @@ window.onload = function dor() {
         var data = JSON.parse(text);
         console.log(data);
         quary = data;
+        myLoop(quary)
     });
 
 
