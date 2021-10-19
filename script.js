@@ -29,9 +29,7 @@ window.onload = function dor() {
         var element = document.getElementById("demo");
 
         var i, y, xLen;
-        xLen = x.length;
-        xLen = Object.keys(quary).length;
-        for (i = 0; i < xLen; i++) {
+        for (i = 0; i < 21; i++) {
             var div = document.createElement("div");
            
             var tag0 = document.createElement("h2");
