@@ -14,6 +14,27 @@ window.onload = function dor() {
         divdate.id = "divdate";
     element.appendChild(divdate);
 
+    function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+            if (rawFile.readyState === 4 && rawFile.status == "200") {
+                callback(rawFile.responseText);
+            }
+        }
+        rawFile.send(null);
+    }
+    
+    //usage:
+    readTextFile("quary.json", function(text){
+        var data = JSON.parse(text);
+        console.log(data);
+    });
+
+
+
+
         var i, y, xLen;
         x = x.childNodes;
         xLen = Object.keys(quary).length;
