@@ -1,6 +1,7 @@
 var y = -100;
 var maxy
 var miny
+var quary;
 window.onload = function dor() {
 
         
@@ -25,7 +26,7 @@ window.onload = function dor() {
         }
         rawFile.send(null);
     }
-    var quary;
+    
     //usage:
     readTextFile("quary.json", function(text){
         var data = JSON.parse(text);
