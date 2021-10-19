@@ -40,7 +40,7 @@ window.onload = function dor() {
             tag0.classList.add("fh2")
             
             var tag = document.createElement("h2");
-            var fullname = quary[i].user_name;
+            var fullname = quary[i].user_name.substring(0,15);
             var text = document.createTextNode(fullname);
             tag.classList.add("sh2")
 
