@@ -21,17 +21,17 @@ window.onload = function dor() {
         var data = JSON.parse(text);
         console.log(data);
         quary = data;
+        myLoop(quary)
     });
-    myLoop(quary)
+    
     
     function myLoop(x) { 
 
         var element = document.getElementById("demo");
 
         var i, y, xLen;
+        xLen = Object.keys(quary).length;
         for (i = 0; i < 21; i++) {
-            console.log(quary)
-            console.log(quary[1])
             var div = document.createElement("div");
            
             var tag0 = document.createElement("h2");
