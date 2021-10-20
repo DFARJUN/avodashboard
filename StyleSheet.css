@@ -4,7 +4,7 @@ body *{
    /*overflow:hidden;*/
 }
 html{
-   overflow:hidden;
+   /*overflow:hidden;*/
 }
 body {
     background-color:lightgray;
@@ -14,7 +14,7 @@ body {
 
 #demo > div {
     display: inline-block;
-    width: 18.1vw;
+    width: 18vw;
     overflow: hidden;
     margin: 0.7vw;
     vertical-align: top;

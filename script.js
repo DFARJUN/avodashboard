@@ -89,7 +89,7 @@ window.onload = function dor() {
         y += window.innerHeight-150;
         if (y + miny-100 > maxy && maxy > 0) {
             clearInterval(myint);
-            setTimeout(function () { location.reload(); }, 5000);
+            setTimeout(function () { location.reload(); }, 4000);
         }
-    }, 5000);
+    }, 4000);
 }
