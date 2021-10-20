@@ -1,6 +1,6 @@
-maxy = document.body.scrollHeight;
-miny = window.innerHeight;
-var y = -0.85*miny;
+var maxy;
+var miny;
+
 var quary;
 window.onload = function dor() {
 
@@ -82,6 +82,10 @@ window.onload = function dor() {
 
         }
     }
+    maxy = document.body.scrollHeight;
+    miny = window.innerHeight;
+    var y = 0;
+
     var myint = setInterval(function () {
 
         window.scroll(0, y);
