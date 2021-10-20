@@ -95,7 +95,7 @@ window.onload = function dor() {
             y += 0.9*miny;
         }
         window.scroll(0, y);
-        if (y + miny >= maxy && maxy > 0) {
+        if (y + miny >= maxy-10 && maxy > 0) {
             clearInterval(myint);
             setTimeout(function () { location.reload(); }, 4000);
         }
