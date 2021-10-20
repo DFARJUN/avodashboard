@@ -91,14 +91,15 @@ window.onload = function dor() {
         
         if(y+0.85*miny > maxy){
             y += maxy-miny-y;
+            setTimeout(function () { location.reload(); }, 4000);
         }else{
             y += 0.9*miny;
         }
         window.scroll(0, y);
         if (y + miny >= maxy-10 && maxy > 0) {
-            clearInterval(myint);
+            //clearInterval(myint);
             //location.reload();
-            setTimeout(function () { location.reload(); }, 4000);
+            
         }
     }, 4000);
 }
