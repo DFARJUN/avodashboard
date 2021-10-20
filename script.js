@@ -88,23 +88,13 @@ window.onload = function dor() {
     var y =  -0.9*miny;
     var myint = setInterval(function () {
 
-        
-        if(y+0.95*miny >= maxy){
-            y += maxy-miny-y;
-            console.log("yesss")
-            setTimeout(function () { 
-                y =  -0.9*miny;
-                window.scroll(0, y);
-                location.reload(); 
-            }, 4000);
+        if (y + miny >= maxy-10 && maxy > 0) {
+            y =  -0.9*miny;
+            window.scroll(0, y);
+            location.reload();        
         }else{
             y += 0.9*miny;
         }
         window.scroll(0, y);
-        if (y + miny >= maxy-10 && maxy > 0) {
-            //clearInterval(myint);
-            //location.reload();
-            
-        }
     }, 4000);
 }
