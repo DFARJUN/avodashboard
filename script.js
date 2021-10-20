@@ -86,7 +86,7 @@ window.onload = function dor() {
         maxy = document.body.scrollHeight;
         miny = window.innerHeight;
         window.scroll(0, y);
-        y += window.innerHeight-150;
+        y += 0.85*miny;
         if (y + miny-100 > maxy && maxy > 0) {
             clearInterval(myint);
             setTimeout(function () { location.reload(); }, 4000);
