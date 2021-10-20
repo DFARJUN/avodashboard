@@ -84,8 +84,7 @@ window.onload = function dor() {
     }
     maxy = document.body.scrollHeight;
     miny = window.innerHeight;
-    var y = 0;
-
+    var y = 1;
     var myint = setInterval(function () {
 
         window.scroll(0, y);
