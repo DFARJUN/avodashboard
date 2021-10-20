@@ -85,7 +85,7 @@ window.onload = function dor() {
     }
     
     miny = window.innerHeight;
-    var y =  -0.9*miny;
+    var y =  0;
     var myint = setInterval(function () {
 
         if (y + miny >= maxy-10 && maxy > 0) {
@@ -96,5 +96,5 @@ window.onload = function dor() {
             y += 0.9*miny;
         }
         window.scroll(0, y);
-    }, 4000);
+    }, 6000);
 }
