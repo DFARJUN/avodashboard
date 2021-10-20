@@ -90,7 +90,7 @@ window.onload = function dor() {
         }else{
             y += 0.9*miny;
         }
-        if (y + miny-100 > maxy && maxy > 0) {
+        if (y + miny >= maxy && maxy > 0) {
             clearInterval(myint);
             setTimeout(function () { location.reload(); }, 4000);
         }
