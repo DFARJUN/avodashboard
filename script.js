@@ -85,15 +85,16 @@ window.onload = function dor() {
     }
     
     miny = window.innerHeight;
-    var y = 0;
+    var y =  -0.9*miny;;
     var myint = setInterval(function () {
 
-        window.scroll(0, y);
+        
         if(y+0.85*miny > maxy){
             y += maxy-miny-y;
         }else{
             y += 0.9*miny;
         }
+        window.scroll(0, y);
         if (y + miny >= maxy && maxy > 0) {
             clearInterval(myint);
             setTimeout(function () { location.reload(); }, 4000);
