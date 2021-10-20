@@ -76,9 +76,8 @@ window.onload = function dor() {
                 break;
             }
 
-            if(i<20){
                 element.appendChild(div);
-            }
+
 
 
         }
