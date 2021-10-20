@@ -85,7 +85,10 @@ window.onload = function dor() {
     var myint = setInterval(function () {
         maxy = document.body.scrollHeight;
         miny = window.innerHeight;
-        window.scroll(0, y);
+        window.scroll(0, y);.
+               console.log(y)
+        console.log(maxy)
+        console.log(miny)
         if(y+0.75*miny > maxy){
             y += maxy-miny-y;
         }else{
