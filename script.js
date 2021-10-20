@@ -89,8 +89,9 @@ window.onload = function dor() {
     var myint = setInterval(function () {
 
         
-        if(y+0.85*miny > maxy){
+        if(y+0.9*miny > maxy){
             y += maxy-miny-y;
+            console.log("yesss")
             setTimeout(function () { location.reload(); }, 4000);
         }else{
             y += 0.9*miny;
