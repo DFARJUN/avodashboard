@@ -1,6 +1,6 @@
-var y = -100;
-var maxy
-var miny
+maxy = document.body.scrollHeight;
+miny = window.innerHeight;
+var y = -0.85*miny;
 var quary;
 window.onload = function dor() {
 
@@ -83,11 +83,10 @@ window.onload = function dor() {
         }
     }
     var myint = setInterval(function () {
-        maxy = document.body.scrollHeight;
-        miny = window.innerHeight;
+
         window.scroll(0, y);
-        if(y+0.75*miny > maxy){
-            y += maxy-miny-y-101;
+        if(y+0.85*miny > maxy){
+            y += maxy-miny-y;
         }else{
             y += 0.9*miny;
         }
