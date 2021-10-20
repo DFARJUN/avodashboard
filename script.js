@@ -31,7 +31,7 @@ window.onload = function dor() {
 
         var i, y, xLen;
         xLen = Object.keys(quary).length;
-        for (i = 0; i < 21; i++) {
+        for (i = 0; i < xLen; i++) {
             var div = document.createElement("div");
            
             var tag0 = document.createElement("h2");
@@ -83,14 +83,14 @@ window.onload = function dor() {
 
         }
     }
-    /*var myint = setInterval(function () {
+    var myint = setInterval(function () {
         maxy = document.body.scrollHeight;
         miny = window.innerHeight;
         window.scroll(0, y);
-        y += 0.2;
+        y += window.innerHeight-150;
         if (y + miny-100 > maxy && maxy > 0) {
             clearInterval(myint);
             setTimeout(function () { location.reload(); }, 5000);
         }
-    }, 1);*/
+    }, 5000);
 }
