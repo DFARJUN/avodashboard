@@ -86,15 +86,21 @@ window.onload = function dor() {
     
     miny = window.innerHeight;
     var y =  0;
+    var times = 0
     var myint = setInterval(function () {
 
         if (y + miny >= maxy-10 && maxy > 0) {
             y =  -0.9*miny;
+            times += 1
             window.scroll(0, y);
-            location.reload();        
+                  
         }else{
             y += 0.9*miny;
         }
         window.scroll(0, y);
+
+        if (times==5){
+            location.reload();  
+        }
     }, 6000);
 }
