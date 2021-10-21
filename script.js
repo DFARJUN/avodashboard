@@ -1,6 +1,6 @@
 var maxy;
 var miny;
-
+var times = 0
 var quary;
 window.onload = function dor() {
 
@@ -86,11 +86,11 @@ window.onload = function dor() {
     
     miny = window.innerHeight;
     var y =  0;
-    var times = 0
+    
     var myint = setInterval(function () {
 
-        if (y + miny >= maxy-10 && maxy > 0) {
-            y =  -0.9*miny;
+        if (y + miny >= maxy && maxy > 0) {
+            y =  0;
             times += 1
             window.scroll(0, y);
                   
