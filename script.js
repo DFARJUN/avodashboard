@@ -89,9 +89,9 @@ window.onload = function dor() {
     
     var myint = setInterval(function () {
 
-        if (y + miny-100 >= maxy && maxy > 0) {
+        if (y + miny >= maxy && maxy > 0) {
             setTimeout(function () { 
-                y =  0;
+                y =  -100;
                 times += 1
                 window.scroll(0, y);  
                 if (times==5){
@@ -101,7 +101,7 @@ window.onload = function dor() {
 
                   
         }else{
-            y += 0.05;
+            y += 0.1;
         }
         window.scroll(0, y);
     }, 1);
