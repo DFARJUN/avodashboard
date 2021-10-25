@@ -104,5 +104,5 @@ window.onload = function dor() {
             y += 0.05;
         }
         window.scroll(0, y);
-    }, 2);
+    }, 1);
 }
