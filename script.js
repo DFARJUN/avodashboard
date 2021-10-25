@@ -85,22 +85,24 @@ window.onload = function dor() {
     }
     
     miny = window.innerHeight;
-    var y =  0;
+    var y =  -100;
     
     var myint = setInterval(function () {
 
-        if (y + miny >= maxy && maxy > 0) {
-            y =  0;
-            times += 1
-            window.scroll(0, y);
+        if (y + miny-100 >= maxy && maxy > 0) {
+            setTimeout(function () { 
+                y =  0;
+                times += 1
+                window.scroll(0, y);  
+                if (times==5){
+                    location.reload();  
+                }
+            }, 5000);
+
                   
         }else{
-            y += 0.9*miny;
+            y += 0.05;
         }
         window.scroll(0, y);
-
-        if (times==5){
-            location.reload();  
-        }
-    }, 6000);
+    }, 2);
 }
